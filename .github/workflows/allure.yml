@@ -36,8 +36,8 @@ jobs:
         name: allure-report
         path: ./target/allure-results/
 
-    - name: Deploy Allure Report
-      uses: peaceiris/actions-gh-pages@v3
+    - name: GitHub Pages action
+      uses: peaceiris/actions-gh-pages@v3.9.3
       with:
         github_token: ${{ secrets.GITHUB_TOKEN }}
         publish_dir: ./target/allure-results/
