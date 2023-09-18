@@ -12,7 +12,6 @@
         <maven.compiler.source>8</maven.compiler.source>
         <maven.compiler.target>8</maven.compiler.target>
         <aspectj.version>1.9.19</aspectj.version>
-        <allure-testng.version>2.23.0</allure-testng.version>
         <maven-surefire.version>3.1.2</maven-surefire.version>
         <maven-checkstyle.version>3.1.2</maven-checkstyle.version>
         <rest-assured.version>5.3.1</rest-assured.version>
