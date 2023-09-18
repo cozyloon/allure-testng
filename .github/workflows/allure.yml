@@ -43,7 +43,7 @@ jobs:
 #         publish_dir: ./target/allure-results/
 #         publish_branch: gh-pages
 
-    - uses: vimtor/action-zip@v1
+    - uses: vimtor/action-zip@v1.1
       timeout-minutes: 30
       if: always()
       with:
