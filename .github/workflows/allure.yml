@@ -34,11 +34,11 @@ jobs:
       uses: actions/upload-artifact@v3
       with:
         name: allure-report
-        path: target/allure-report
+        path: ./target/allure-results/
 
     - name: Deploy Allure Report
       uses: peaceiris/actions-gh-pages@v3
       with:
         github_token: ${{ secrets.GITHUB_TOKEN }}
-        publish_dir: ./target/allure-report
+        publish_dir: ./target/allure-results/
         publish_branch: gh-pages
