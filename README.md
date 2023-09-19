@@ -1,1 +1,1 @@
-# Allure-TestNG
+# Allure-TestNg
