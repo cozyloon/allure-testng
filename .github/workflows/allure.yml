@@ -30,29 +30,29 @@ jobs:
         mvn clean test
         mvn allure:report
 
-#     - name: Upload Allure Report
-#       uses: actions/upload-artifact@v3
-#       with:
-#         name: allure-report
-#         path: ./target/allure-results/
-
-#     - name: GitHub Pages action
-#       uses: peaceiris/actions-gh-pages@v3.9.3
-#       with:
-#         github_token: ${{ secrets.GITHUB_TOKEN }}
-#         publish_dir: ./target/allure-results/
-#         publish_branch: gh-pages
-
-    - uses: vimtor/action-zip@v1.1
-      timeout-minutes: 30
-      if: always()
+    - name: Upload Allure Report
+      uses: actions/upload-artifact@v3
       with:
-        files: ./target/allure-results/
-        dest: ./allure-results.zip
+        name: allure-report
+        path: ./target/allure-results/
 
-    - uses: actions/upload-artifact@v3
-      timeout-minutes: 30
-      if: always()
+    - name: GitHub Pages action
+      uses: peaceiris/actions-gh-pages@v3.9.3
       with:
-        name: allure-results
-        path: ./allure-results.zip
+        github_token: ${{ secrets.GITHUB_TOKEN }}
+        publish_dir: ./target/allure-results/
+        publish_branch: gh-pages
+
+#    - uses: vimtor/action-zip@v1.1
+#      timeout-minutes: 30
+#      if: always()
+#      with:
+#        files: ./target/allure-results/
+#        dest: ./allure-results.zip
+
+#    - uses: actions/upload-artifact@v3
+#      timeout-minutes: 30
+#      if: always()
+#      with:
+#        name: allure-results
+#        path: ./allure-results.zip
