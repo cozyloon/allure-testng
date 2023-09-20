@@ -51,7 +51,7 @@ public class Example {
                 .build();
 
         ResponseSpecification responseSpecification = new ResponseSpecBuilder()
-                .expectBody("data.products[0].name", equalTo("Cherries"))
+                .expectBody("data.products[0].name", equalTo("Cherrie"))
                 .expectStatusCode(200)
                 .build();
 
