@@ -1,1 +1,0 @@
-{"d67fe8f2e7ffada50c4f5c52ac07b085":{"statistic":{"failed":0,"broken":0,"skipped":0,"passed":1,"unknown":0,"total":1},"items":[{"uid":"501f079a2626a6d7","reportUrl":"https://cozyloon.github.io/allure-testng/2//#testresult/501f079a2626a6d7","status":"passed","time":{"start":1695205882541,"stop":1695205887064,"duration":4523}}]}}
