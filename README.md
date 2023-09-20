@@ -1,6 +1,6 @@
 # Allure Report on GitHub Pages with GitHub Actions
 
-Do these changes to your repo first. Unless this reporting is not working fine<br> 
+Do these changes to your repo first. Unless this reporting is not working fine<br> <br>
 Repo settings -> Pages<br>
 <br>
 <br>
