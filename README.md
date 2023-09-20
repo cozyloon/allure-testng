@@ -10,17 +10,3 @@ Repo settings -> Pages<br>
 Repo settings -> Actions -> General -> goto bottom of the page<br> 
 ![image](https://github.com/cozyloon/allure-testng/assets/38062287/e17ac514-7b95-4313-8ce2-9a9062bfa812)
 
-
-<br><br>
-
-├───src
-   ├───main
-   │   └───java
-   │       └───model
-   │               GraphQlQuery.java
-   │               QueryVariable.java
-   │
-   └───test
-       └───java
-           └───tests
-                   Example.java
