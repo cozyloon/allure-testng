@@ -1,4 +1,4 @@
-name: RestAssured Automation
+name: RestAssured Automation allure
 
 on:
   push:
