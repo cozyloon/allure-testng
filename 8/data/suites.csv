@@ -1,0 +1,2 @@
+"Status","Start Time","Stop Time","Duration in ms","Parent Suite","Suite","Sub Suite","Test Class","Test Method","Name","Description"
+"failed","Wed Sep 20 11:05:02 GMT 2023","Wed Sep 20 11:05:07 GMT 2023","4663","All Test Suite","C:/Users/csangeeth/IdeaProjects/allure-testng","tests.Example","tests.Example","testGraphQl","testGraphQl",""
