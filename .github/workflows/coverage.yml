@@ -25,17 +25,23 @@ jobs:
 
       - name: Build and Test
         if: always()
-        run: mvn clean test
+        run: |
+          mvn clean test
+          mvn jacoco:report
         continue-on-error: true    
 
+      # - name: Upload Report
+      #   uses: actions/upload-artifact@v3.1.3
+      #   with:
+      #     name: report.xml
+      #     path: ${{ github.workspace }}/target/site/jacoco/index.html
+      
       - name: Add coverage to PR
         id: jacoco
         uses: madrapps/jacoco-report@v1.6.1
         with:
           paths: |
-            ${{ github.workspace }}/build/reports/jacoco/testCoverage/testCoverage.xml
-            ${{ github.workspace }}/**/build/reports/jacoco/prodNormalDebugCoverage/prodNormalDebugCoverage.xml,
-            ${{ github.workspace }}/**/build/reports/jacoco/**/debugCoverage.xml
+            ${{ github.workspace }}/target/site/jacoco/index.html
           token: ${{ secrets.GITHUB_TOKEN }}
           min-coverage-overall: 40
           min-coverage-changed-files: 60
