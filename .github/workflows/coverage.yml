@@ -25,7 +25,9 @@ jobs:
 
       - name: Build and Test
         if: always()
-        run: mvn clean test
+        run: |
+          mvn clean test
+          mvn jacoco:report
         continue-on-error: true    
 
       # - name: Upload Report
