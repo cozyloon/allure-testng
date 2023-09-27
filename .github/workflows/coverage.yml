@@ -28,11 +28,11 @@ jobs:
         run: mvn clean test
         continue-on-error: true    
 
-      - name: Upload Report
-        uses: actions/upload-artifact@v3.1.3
-        with:
-          name: report.xml
-          path: ${{ github.workspace }}/target/site/jacoco/index.html
+      # - name: Upload Report
+      #   uses: actions/upload-artifact@v3.1.3
+      #   with:
+      #     name: report.xml
+      #     path: ${{ github.workspace }}/target/site/jacoco/index.html
       
       - name: Add coverage to PR
         id: jacoco
