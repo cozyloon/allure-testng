@@ -1,5 +1,5 @@
 ## Automated Testing Checklist
-- [ ] Tests are reliable and pass with a >95% pass rate
+- [ ] Tests are reliable and pass with a 100% pass rate
 - [ ] CICD is in passing state
 - [ ] Tests are written in a declarative manner to represent end-user behavior. The test has no understanding of page locators. Read about [page object best practices.](https://lnkd.in/eVNKdc2g)
 - [ ] Assertions exist only in the test and are clear about their purpose
